@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 2em;
+  font-weight: bold;
+  animation: fadeIn 2s ease-out;
+  margin-bottom: 15px;
+  color: #00ffc8;
+}
+
+.qr-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.scan-info-text {
+  font-size: 1.2em;
+  color: #7df9ff;
+  margin-bottom: 20px;
+  animation: fadeSlide 1.5s ease-in-out;
+}
+
+.scanner-wrapper {
+  text-align: center;
+}
+
+.scan-prompt {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  animation: blink 1s infinite;
+  color: #fff200;
+}
+
+#qr-reader {
+  width: 300px;
+  margin: auto;
+  border: 2px solid #00ffc8;
+  border-radius: 10px;
+}
+
+.info-box {
+  background-color: #222;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.info-box p {
+  margin: 0;
+  font-weight: bold;
+  color: #00ffc8;
+}
+
+#result-text {
+  color: #fff;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
