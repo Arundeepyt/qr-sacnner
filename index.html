@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated QR Scanner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="welcome-text">Welcome to My QR Scanner</div>
+
+    <!-- Your QR scanner image -->
+    <img src="https://raw.githubusercontent.com/Arundeepyt/QR-SCANNER/main/qr_img.png" alt="QR Scanner Visual"
+        class="qr-image" />
+
+    <!-- Animated info text -->
+    <div class="scan-info-text">To scan QR of my website</div>
+
+    <div class="scanner-wrapper">
+        <div class="scan-prompt">Scan Your QR</div>
+        <div id="qr-reader"></div>
+
+        <div class="info-box" id="result-box">
+            <p>Scanned Info:</p>
+            <span id="result-text"></span>
+        </div>
+    </div>
+
+    <!-- QR scanning library -->
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
