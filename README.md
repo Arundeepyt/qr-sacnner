@@ -27,3 +27,4 @@ A stylish and responsive **QR Code Scanner** built using **HTML, CSS, and JavaSc
 ## 📁 How to Run
 
 1. Clone the repo:
+ Back end project was already  ready and fromt end today maked🥰
